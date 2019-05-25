@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="RTProjectComponent">
+    <option name="rtExecutable" value="C:\Users\papa\AppData\Roaming\npm\rt.cmd" />
     <option name="nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
+    <option name="targetVersion" value="15.0.1" />
+    <option name="pluginEnabled" value="true" />
     <option name="modules" value="es6" />
   </component>
 </project>
