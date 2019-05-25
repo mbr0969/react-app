@@ -1,17 +1,17 @@
 import React from 'react';
-import classes from './Navbar.module.css';
+import s from './Navbar.module.css';
 
 const Navbar  = () =>{
 
   return(
-    <nav className={classes.nav}>
-    <div className={classes.item}><a>Профиль</a></div>
-    <div className={`${classes.item} ${classes.active}`}><a>Сообщенния</a></div>
-    <div className={classes.item}><a>Новости</a></div>
-    <div className={classes.item}><a>Музыка</a></div>
-    <div className={classes.item}><a>Настройки</a></div>       
+    <nav className={s.nav}>
+    <div className={s.item}><a href="/profile">Профиль</a></div>
+    <div className={`${s.item} ${s.active}`}><a href="/dialogs">Сообщенния</a></div>
+    <div className={s.item}><a href="/news">Новости</a></div>
+    <div className={s.item}><a href="/music">Музыка</a></div>
+    <div className={s.item}><a href="/settings">Настройки</a></div>
   </nav>
   );
-}
+};
 
 export default Navbar;

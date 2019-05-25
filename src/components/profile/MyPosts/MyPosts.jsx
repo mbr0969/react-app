@@ -12,12 +12,12 @@ const MyPosts = () =>{
           <button>Добавить</button>
         </div>
       <div className={classes.posts}>      
-        <Post message='Привет!!' />
-        <Post message='Как дела?'/>
-        <Post message='Отлично!!!' />
+        <Post message='Привет!!' likesCount='89' />
+        <Post message='Как дела?' likesCount='4'/>
+        <Post message='Отлично!!!' likesCount='123' />
       </div>  
       </div>
   );
-}
+};
 
 export default MyPosts;
