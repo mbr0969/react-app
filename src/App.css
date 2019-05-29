@@ -12,8 +12,9 @@
 
 .grid-content{
   grid-area: content;
-  background-color: cornflowerblue
+  background-color: cornflowerblue;
 }
+
 .grid-content img{
   width: 993px;
   height: 230px;

@@ -1,34 +1,36 @@
 import React from 'react';
 import s from './Dialogs.module.css';
+//noinspection JSUnresolvedVariable
 import {NavLink} from 'react-router-dom';
 
-const DialogItem = (props) =>{
+const DialogItem = (props) => {
+    let path = "/dialogs/" + props.id;
     return (
-        <div className={s.dialog + '  ' + s.active }>
-            <NavLink  to={"/dialogs/"+props.id}>{props.name}</NavLink>
+        <div className={s.dialog + '  ' + s.active  + ' ' + s.user}>
+            <NavLink  to={path}>{props.name}</NavLink>
         </div>
     );
 };
 
-const  Dialogs = (props) =>{
-    return(
+const Message = (props)=> {
+    return (
+        <div className={s.message}>{props.message}</div>
+    );
+};
+
+const Dialogs = (props) => {
+    return (
         <div className={s.dialogs}>
-           <div className={s.dialogsItems}>
-               <DialogItem name ='Маша' id="1" />
-               <div className={s.dialog}>
-                   <DialogItem name ='Мама ' id="2" />
-               </div>
-               <div className={s.dialog}>
-                   <DialogItem name ='Сеня' id="3" />
-               </div>
-               <div className={s.dialog}>
-                   <DialogItem name ='Папа' id="4" />
-               </div>
-           </div>
+            <div className={s.dialogsItems}>
+                <DialogItem name='Маша' id="1"/>
+                <DialogItem name='Мама ' id="2"/>
+                <DialogItem name='Сеня' id="3"/>
+                <DialogItem name='Папа' id="4"/>
+            </div>
             <div className={s.messages}>
-                <div className={s.message}>Привет</div>
-                <div className={s.message}>Пока</div>
-                <div className={s.message}>Хорошо</div>
+                <Message message="Привет"/>
+                <Message message="Хорошо"/>
+                <Message message="Пока"/>
             </div>
         </div>
     );

@@ -1,11 +1,11 @@
 .nav {
   grid-area: nav;
   background-color: cadetblue;
-  padding: 6%;
+  padding: 9%;
 }
 .item{
   color: aliceblue;
-  margin-top: 5%;
+  margin-top: 8%;
 
 }
 .item a.activeLink{
